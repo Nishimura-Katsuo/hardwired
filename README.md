@@ -14,6 +14,10 @@ npm start        # then open http://localhost:8080
 
 No build step and no dependencies. Needs Node 20+ and a WebGL2 browser.
 
+## Initial Prompt
+
+Design a a basic competitive first person shooter game played by bots with a dynamic spectator camera. For the bots' AI, use an Astra 6 extra high subagent to design a neural network and program the weights directly (no training of any kind) using weight-space programming. You can handle everything about the game except for the neural network, since Astra is better at weight-space programming.
+
 ## Watching
 
 An automated director runs the broadcast. It scores fights already happening and
