@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HARDWIRED</title>
+    <link rel="icon" href="assets/icon.svg" />
+    <link rel="stylesheet" href="src/ui/style.css" />
+  </head>
+  <body>
+    <canvas id="screen" aria-label="Live match broadcast"></canvas>
+
+    <div id="hud" hidden>
+      <header class="bug" aria-label="Score">
+        <div class="bug-team kiln"><span id="name-0">KILN</span><strong id="score-0">0</strong></div>
+        <div class="bug-clock"><span id="clock">4:00</span><small id="period"></small></div>
+        <div class="bug-team tide"><strong id="score-1">0</strong><span id="name-1">TIDE</span></div>
+      </header>
+
+      <canvas id="map" width="256" height="160" aria-label="Arena map"></canvas>
+
+      <ol id="feed" aria-label="Recent kills"></ol>
+
+      <div id="callout" role="status"></div>
+
+      <section class="third" id="third" aria-label="Followed player">
+        <div class="third-name" id="player-name"></div>
+        <div class="third-body">
+          <div class="meter"><div id="health"></div></div>
+          <div class="third-stats">
+            <span id="ammo"></span>
+            <span id="record"></span>
+          </div>
+        </div>
+        <div class="third-cam" id="cam-label"></div>
+      </section>
+
+      <section class="mind" aria-label="What the network is thinking">
+        <h2 id="mind-title">Network</h2>
+        <ul id="mind-bars"></ul>
+        <p id="mind-note"></p>
+      </section>
+
+      <div id="replay-bug">Instant replay</div>
+      <div id="lock-note"></div>
+
+      <section id="table" hidden aria-label="Scoreboard">
+        <h2 id="table-title">Scoreboard</h2>
+        <div id="table-body"></div>
+        <p id="table-note"></p>
+      </section>
+    </div>
+
+    <div id="wipe" aria-hidden="true">
+      <div class="wipe-band a"></div>
+      <div class="wipe-band b"></div>
+      <div class="wipe-word">Replay</div>
+    </div>
+
+    <div id="title">
+      <h1>HARDWIRED</h1>
+      <p>Eight robots. Zero training. Every weight in their heads was written by hand.</p>
+      <button id="start" type="button">Watch with sound</button>
+      <button id="start-muted" type="button" class="quiet">Watch muted</button>
+      <dl class="keys">
+        <div><dt>1 to 8</dt><dd>Follow a player</dd></div>
+        <div><dt>0</dt><dd>Back to the director</dd></div>
+        <div><dt>C</dt><dd>Change camera</dd></div>
+        <div><dt>R</dt><dd>Replay last kill</dd></div>
+        <div><dt>Tab</dt><dd>Scoreboard</dd></div>
+        <div><dt>Space</dt><dd>Pause</dd></div>
+        <div><dt>[ ]</dt><dd>Match speed</dd></div>
+        <div><dt>H</dt><dd>Hide graphics</dd></div>
+        <div><dt>M</dt><dd>Mute</dd></div>
+      </dl>
+    </div>
+
+    <div id="fatal" hidden role="alert"></div>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>

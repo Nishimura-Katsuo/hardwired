@@ -1,0 +1,137 @@
+{
+  "weightsSha256": "bc2f0761ceabbb3ce54402a55a31eb2bb712c0c5e36f6e5ca7ae8102149cbbc9",
+  "architecture": {
+    "inputSize": 142,
+    "states": 5,
+    "nodes": 603,
+    "parameters": 1706,
+    "maxDepth": 57
+  },
+  "baseline": {
+    "matches": 40,
+    "a": "neural",
+    "b": "baseline",
+    "aWins": 38,
+    "bWins": 2,
+    "unfinished": 0,
+    "meanSeconds": 116.21583333333331,
+    "meanFrags": 73.325,
+    "accuracy": 0.338832792089133,
+    "meanCellsVisited": 129.75
+  },
+  "neuralAccuracyVsBaseline": 0.3738249216614441,
+  "idle": {
+    "matches": 40,
+    "a": "neural",
+    "b": "idle",
+    "aWins": 40,
+    "bWins": 0,
+    "unfinished": 0,
+    "meanSeconds": 73.19875000000002,
+    "meanFrags": 40,
+    "accuracy": 0.4088314171158493,
+    "meanCellsVisited": 46.915625
+  },
+  "self": {
+    "matches": 40,
+    "a": "neural",
+    "b": "neural",
+    "aWins": 19,
+    "bWins": 21,
+    "unfinished": 0,
+    "meanSeconds": 136.81750000000002,
+    "meanFrags": 75.975,
+    "accuracy": 0.34966169154228854,
+    "meanCellsVisited": 153.16875
+  },
+  "selfSideWins": [
+    19,
+    21
+  ],
+  "reference": {
+    "matches": 40,
+    "a": "baseline",
+    "b": "baseline",
+    "aWins": 19,
+    "bWins": 21,
+    "unfinished": 0,
+    "meanSeconds": 104.75708333333337,
+    "meanFrags": 75.775,
+    "accuracy": 0.2992095771621518,
+    "meanCellsVisited": 102.7375
+  },
+  "roster": [
+    {
+      "name": "ANVIL",
+      "kills": 357,
+      "zeroKillMatches": 0,
+      "accuracy": 0.345547235940736,
+      "meanCells": 153.1,
+      "baselineMeanCells": 102.825,
+      "minCells": 125
+    },
+    {
+      "name": "EMBER",
+      "kills": 443,
+      "zeroKillMatches": 0,
+      "accuracy": 0.34309014125527887,
+      "meanCells": 152,
+      "baselineMeanCells": 102.875,
+      "minCells": 118
+    },
+    {
+      "name": "SLAG",
+      "kills": 363,
+      "zeroKillMatches": 0,
+      "accuracy": 0.3458646616541353,
+      "meanCells": 155.425,
+      "baselineMeanCells": 105.4,
+      "minCells": 132
+    },
+    {
+      "name": "FLUX",
+      "kills": 357,
+      "zeroKillMatches": 0,
+      "accuracy": 0.3619751482173313,
+      "meanCells": 152.225,
+      "baselineMeanCells": 100.675,
+      "minCells": 131
+    },
+    {
+      "name": "BRINE",
+      "kills": 338,
+      "zeroKillMatches": 0,
+      "accuracy": 0.3475323849638401,
+      "meanCells": 154.15,
+      "baselineMeanCells": 101.675,
+      "minCells": 126
+    },
+    {
+      "name": "EDDY",
+      "kills": 413,
+      "zeroKillMatches": 0,
+      "accuracy": 0.33947616629180877,
+      "meanCells": 149.9,
+      "baselineMeanCells": 103.7,
+      "minCells": 122
+    },
+    {
+      "name": "KELP",
+      "kills": 353,
+      "zeroKillMatches": 0,
+      "accuracy": 0.3513232104121475,
+      "meanCells": 159.275,
+      "baselineMeanCells": 103.325,
+      "minCells": 117
+    },
+    {
+      "name": "RIP",
+      "kills": 415,
+      "zeroKillMatches": 0,
+      "accuracy": 0.3645156046814044,
+      "meanCells": 149.275,
+      "baselineMeanCells": 101.425,
+      "minCells": 125
+    }
+  ]
+}

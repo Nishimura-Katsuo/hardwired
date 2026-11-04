@@ -1,0 +1,1106 @@
+{
+  "summary": {
+    "matches": 10,
+    "a": "neural",
+    "b": "baseline",
+    "aWins": 9,
+    "bWins": 1,
+    "unfinished": 0,
+    "meanSeconds": 116.23499999999999,
+    "meanFrags": 73.4,
+    "accuracy": 0.3370327584784223,
+    "meanCellsVisited": 128.7875
+  },
+  "results": [
+    {
+      "seed": 40,
+      "seconds": 115.46666666666667,
+      "phase": "ended",
+      "winner": 0,
+      "score": [
+        40,
+        29
+      ],
+      "bots": [
+        {
+          "name": "ANVIL",
+          "team": 0,
+          "kills": 10,
+          "deaths": 7,
+          "assists": 13,
+          "damage": 1025,
+          "shots": 283,
+          "hits": 101,
+          "bestStreak": 2,
+          "cellsVisited": 139
+        },
+        {
+          "name": "EMBER",
+          "team": 0,
+          "kills": 9,
+          "deaths": 9,
+          "assists": 15,
+          "damage": 1330,
+          "shots": 314,
+          "hits": 131,
+          "bestStreak": 3,
+          "cellsVisited": 119
+        },
+        {
+          "name": "SLAG",
+          "team": 0,
+          "kills": 12,
+          "deaths": 5,
+          "assists": 14,
+          "damage": 880,
+          "shots": 246,
+          "hits": 87,
+          "bestStreak": 5,
+          "cellsVisited": 149
+        },
+        {
+          "name": "FLUX",
+          "team": 0,
+          "kills": 9,
+          "deaths": 8,
+          "assists": 11,
+          "damage": 1005,
+          "shots": 276,
+          "hits": 96,
+          "bestStreak": 3,
+          "cellsVisited": 130
+        },
+        {
+          "name": "BRINE",
+          "team": 1,
+          "kills": 10,
+          "deaths": 9,
+          "assists": 7,
+          "damage": 870,
+          "shots": 315,
+          "hits": 86,
+          "bestStreak": 3,
+          "cellsVisited": 130
+        },
+        {
+          "name": "EDDY",
+          "team": 1,
+          "kills": 8,
+          "deaths": 9,
+          "assists": 9,
+          "damage": 950,
+          "shots": 295,
+          "hits": 91,
+          "bestStreak": 3,
+          "cellsVisited": 132
+        },
+        {
+          "name": "KELP",
+          "team": 1,
+          "kills": 6,
+          "deaths": 10,
+          "assists": 10,
+          "damage": 720,
+          "shots": 296,
+          "hits": 69,
+          "bestStreak": 2,
+          "cellsVisited": 130
+        },
+        {
+          "name": "RIP",
+          "team": 1,
+          "kills": 5,
+          "deaths": 12,
+          "assists": 15,
+          "damage": 1150,
+          "shots": 316,
+          "hits": 112,
+          "bestStreak": 1,
+          "cellsVisited": 106
+        }
+      ],
+      "aTeam": 0
+    },
+    {
+      "seed": 41,
+      "seconds": 113.78333333333333,
+      "phase": "ended",
+      "winner": 0,
+      "score": [
+        40,
+        36
+      ],
+      "bots": [
+        {
+          "name": "ANVIL",
+          "team": 0,
+          "kills": 13,
+          "deaths": 9,
+          "assists": 10,
+          "damage": 1075,
+          "shots": 286,
+          "hits": 106,
+          "bestStreak": 3,
+          "cellsVisited": 136
+        },
+        {
+          "name": "EMBER",
+          "team": 0,
+          "kills": 13,
+          "deaths": 9,
+          "assists": 10,
+          "damage": 1325,
+          "shots": 335,
+          "hits": 134,
+          "bestStreak": 5,
+          "cellsVisited": 140
+        },
+        {
+          "name": "SLAG",
+          "team": 0,
+          "kills": 9,
+          "deaths": 9,
+          "assists": 11,
+          "damage": 1190,
+          "shots": 338,
+          "hits": 116,
+          "bestStreak": 2,
+          "cellsVisited": 138
+        },
+        {
+          "name": "FLUX",
+          "team": 0,
+          "kills": 5,
+          "deaths": 9,
+          "assists": 18,
+          "damage": 925,
+          "shots": 281,
+          "hits": 91,
+          "bestStreak": 1,
+          "cellsVisited": 135
+        },
+        {
+          "name": "BRINE",
+          "team": 1,
+          "kills": 11,
+          "deaths": 10,
+          "assists": 13,
+          "damage": 1120,
+          "shots": 282,
+          "hits": 110,
+          "bestStreak": 4,
+          "cellsVisited": 128
+        },
+        {
+          "name": "EDDY",
+          "team": 1,
+          "kills": 8,
+          "deaths": 12,
+          "assists": 12,
+          "damage": 920,
+          "shots": 295,
+          "hits": 91,
+          "bestStreak": 3,
+          "cellsVisited": 104
+        },
+        {
+          "name": "KELP",
+          "team": 1,
+          "kills": 7,
+          "deaths": 8,
+          "assists": 10,
+          "damage": 1025,
+          "shots": 217,
+          "hits": 101,
+          "bestStreak": 4,
+          "cellsVisited": 135
+        },
+        {
+          "name": "RIP",
+          "team": 1,
+          "kills": 10,
+          "deaths": 10,
+          "assists": 9,
+          "damage": 920,
+          "shots": 267,
+          "hits": 90,
+          "bestStreak": 2,
+          "cellsVisited": 115
+        }
+      ],
+      "aTeam": 1
+    },
+    {
+      "seed": 42,
+      "seconds": 117.75,
+      "phase": "ended",
+      "winner": 0,
+      "score": [
+        40,
+        35
+      ],
+      "bots": [
+        {
+          "name": "ANVIL",
+          "team": 0,
+          "kills": 7,
+          "deaths": 7,
+          "assists": 12,
+          "damage": 975,
+          "shots": 251,
+          "hits": 92,
+          "bestStreak": 2,
+          "cellsVisited": 133
+        },
+        {
+          "name": "EMBER",
+          "team": 0,
+          "kills": 13,
+          "deaths": 9,
+          "assists": 14,
+          "damage": 1090,
+          "shots": 297,
+          "hits": 109,
+          "bestStreak": 4,
+          "cellsVisited": 124
+        },
+        {
+          "name": "SLAG",
+          "team": 0,
+          "kills": 7,
+          "deaths": 9,
+          "assists": 20,
+          "damage": 1035,
+          "shots": 266,
+          "hits": 100,
+          "bestStreak": 2,
+          "cellsVisited": 140
+        },
+        {
+          "name": "FLUX",
+          "team": 0,
+          "kills": 13,
+          "deaths": 10,
+          "assists": 14,
+          "damage": 1205,
+          "shots": 297,
+          "hits": 120,
+          "bestStreak": 4,
+          "cellsVisited": 119
+        },
+        {
+          "name": "BRINE",
+          "team": 1,
+          "kills": 10,
+          "deaths": 10,
+          "assists": 8,
+          "damage": 1065,
+          "shots": 312,
+          "hits": 103,
+          "bestStreak": 3,
+          "cellsVisited": 123
+        },
+        {
+          "name": "EDDY",
+          "team": 1,
+          "kills": 8,
+          "deaths": 10,
+          "assists": 11,
+          "damage": 850,
+          "shots": 332,
+          "hits": 82,
+          "bestStreak": 3,
+          "cellsVisited": 130
+        },
+        {
+          "name": "KELP",
+          "team": 1,
+          "kills": 8,
+          "deaths": 9,
+          "assists": 12,
+          "damage": 1060,
+          "shots": 345,
+          "hits": 103,
+          "bestStreak": 3,
+          "cellsVisited": 136
+        },
+        {
+          "name": "RIP",
+          "team": 1,
+          "kills": 9,
+          "deaths": 11,
+          "assists": 17,
+          "damage": 1135,
+          "shots": 333,
+          "hits": 113,
+          "bestStreak": 2,
+          "cellsVisited": 133
+        }
+      ],
+      "aTeam": 0
+    },
+    {
+      "seed": 43,
+      "seconds": 123.06666666666666,
+      "phase": "ended",
+      "winner": 1,
+      "score": [
+        38,
+        40
+      ],
+      "bots": [
+        {
+          "name": "ANVIL",
+          "team": 0,
+          "kills": 13,
+          "deaths": 8,
+          "assists": 9,
+          "damage": 1125,
+          "shots": 368,
+          "hits": 113,
+          "bestStreak": 4,
+          "cellsVisited": 156
+        },
+        {
+          "name": "EMBER",
+          "team": 0,
+          "kills": 11,
+          "deaths": 8,
+          "assists": 14,
+          "damage": 1075,
+          "shots": 288,
+          "hits": 107,
+          "bestStreak": 3,
+          "cellsVisited": 165
+        },
+        {
+          "name": "SLAG",
+          "team": 0,
+          "kills": 8,
+          "deaths": 12,
+          "assists": 12,
+          "damage": 1050,
+          "shots": 349,
+          "hits": 103,
+          "bestStreak": 2,
+          "cellsVisited": 131
+        },
+        {
+          "name": "FLUX",
+          "team": 0,
+          "kills": 6,
+          "deaths": 12,
+          "assists": 17,
+          "damage": 1105,
+          "shots": 375,
+          "hits": 107,
+          "bestStreak": 2,
+          "cellsVisited": 117
+        },
+        {
+          "name": "BRINE",
+          "team": 1,
+          "kills": 10,
+          "deaths": 10,
+          "assists": 10,
+          "damage": 970,
+          "shots": 311,
+          "hits": 93,
+          "bestStreak": 3,
+          "cellsVisited": 108
+        },
+        {
+          "name": "EDDY",
+          "team": 1,
+          "kills": 13,
+          "deaths": 9,
+          "assists": 13,
+          "damage": 1432.5,
+          "shots": 355,
+          "hits": 135,
+          "bestStreak": 4,
+          "cellsVisited": 133
+        },
+        {
+          "name": "KELP",
+          "team": 1,
+          "kills": 8,
+          "deaths": 9,
+          "assists": 9,
+          "damage": 800,
+          "shots": 265,
+          "hits": 78,
+          "bestStreak": 3,
+          "cellsVisited": 131
+        },
+        {
+          "name": "RIP",
+          "team": 1,
+          "kills": 9,
+          "deaths": 10,
+          "assists": 15,
+          "damage": 1332.5,
+          "shots": 308,
+          "hits": 129,
+          "bestStreak": 3,
+          "cellsVisited": 122
+        }
+      ],
+      "aTeam": 1
+    },
+    {
+      "seed": 44,
+      "seconds": 104.5,
+      "phase": "ended",
+      "winner": 0,
+      "score": [
+        40,
+        25
+      ],
+      "bots": [
+        {
+          "name": "ANVIL",
+          "team": 0,
+          "kills": 12,
+          "deaths": 7,
+          "assists": 13,
+          "damage": 1005,
+          "shots": 268,
+          "hits": 101,
+          "bestStreak": 6,
+          "cellsVisited": 127
+        },
+        {
+          "name": "EMBER",
+          "team": 0,
+          "kills": 9,
+          "deaths": 7,
+          "assists": 12,
+          "damage": 1290,
+          "shots": 282,
+          "hits": 128,
+          "bestStreak": 3,
+          "cellsVisited": 127
+        },
+        {
+          "name": "SLAG",
+          "team": 0,
+          "kills": 12,
+          "deaths": 6,
+          "assists": 10,
+          "damage": 1015,
+          "shots": 228,
+          "hits": 92,
+          "bestStreak": 4,
+          "cellsVisited": 125
+        },
+        {
+          "name": "FLUX",
+          "team": 0,
+          "kills": 7,
+          "deaths": 5,
+          "assists": 11,
+          "damage": 890,
+          "shots": 268,
+          "hits": 87,
+          "bestStreak": 3,
+          "cellsVisited": 122
+        },
+        {
+          "name": "BRINE",
+          "team": 1,
+          "kills": 11,
+          "deaths": 9,
+          "assists": 5,
+          "damage": 1015,
+          "shots": 291,
+          "hits": 98,
+          "bestStreak": 5,
+          "cellsVisited": 118
+        },
+        {
+          "name": "EDDY",
+          "team": 1,
+          "kills": 4,
+          "deaths": 10,
+          "assists": 10,
+          "damage": 725,
+          "shots": 269,
+          "hits": 69,
+          "bestStreak": 1,
+          "cellsVisited": 111
+        },
+        {
+          "name": "KELP",
+          "team": 1,
+          "kills": 8,
+          "deaths": 10,
+          "assists": 7,
+          "damage": 810,
+          "shots": 283,
+          "hits": 82,
+          "bestStreak": 2,
+          "cellsVisited": 120
+        },
+        {
+          "name": "RIP",
+          "team": 1,
+          "kills": 2,
+          "deaths": 11,
+          "assists": 13,
+          "damage": 850,
+          "shots": 280,
+          "hits": 82,
+          "bestStreak": 1,
+          "cellsVisited": 108
+        }
+      ],
+      "aTeam": 0
+    },
+    {
+      "seed": 45,
+      "seconds": 112.41666666666667,
+      "phase": "ended",
+      "winner": 1,
+      "score": [
+        34,
+        40
+      ],
+      "bots": [
+        {
+          "name": "ANVIL",
+          "team": 0,
+          "kills": 6,
+          "deaths": 10,
+          "assists": 12,
+          "damage": 952.5,
+          "shots": 276,
+          "hits": 92,
+          "bestStreak": 4,
+          "cellsVisited": 123
+        },
+        {
+          "name": "EMBER",
+          "team": 0,
+          "kills": 9,
+          "deaths": 9,
+          "assists": 12,
+          "damage": 930,
+          "shots": 346,
+          "hits": 89,
+          "bestStreak": 3,
+          "cellsVisited": 153
+        },
+        {
+          "name": "SLAG",
+          "team": 0,
+          "kills": 5,
+          "deaths": 11,
+          "assists": 17,
+          "damage": 1000,
+          "shots": 304,
+          "hits": 97,
+          "bestStreak": 1,
+          "cellsVisited": 120
+        },
+        {
+          "name": "FLUX",
+          "team": 0,
+          "kills": 14,
+          "deaths": 10,
+          "assists": 8,
+          "damage": 1077.5,
+          "shots": 313,
+          "hits": 108,
+          "bestStreak": 5,
+          "cellsVisited": 137
+        },
+        {
+          "name": "BRINE",
+          "team": 1,
+          "kills": 10,
+          "deaths": 9,
+          "assists": 12,
+          "damage": 1255,
+          "shots": 292,
+          "hits": 123,
+          "bestStreak": 5,
+          "cellsVisited": 116
+        },
+        {
+          "name": "EDDY",
+          "team": 1,
+          "kills": 12,
+          "deaths": 9,
+          "assists": 11,
+          "damage": 990,
+          "shots": 282,
+          "hits": 97,
+          "bestStreak": 3,
+          "cellsVisited": 112
+        },
+        {
+          "name": "KELP",
+          "team": 1,
+          "kills": 12,
+          "deaths": 7,
+          "assists": 11,
+          "damage": 1060,
+          "shots": 275,
+          "hits": 103,
+          "bestStreak": 3,
+          "cellsVisited": 141
+        },
+        {
+          "name": "RIP",
+          "team": 1,
+          "kills": 6,
+          "deaths": 9,
+          "assists": 15,
+          "damage": 975,
+          "shots": 253,
+          "hits": 96,
+          "bestStreak": 2,
+          "cellsVisited": 122
+        }
+      ],
+      "aTeam": 1
+    },
+    {
+      "seed": 46,
+      "seconds": 121.7,
+      "phase": "ended",
+      "winner": 0,
+      "score": [
+        40,
+        33
+      ],
+      "bots": [
+        {
+          "name": "ANVIL",
+          "team": 0,
+          "kills": 9,
+          "deaths": 8,
+          "assists": 15,
+          "damage": 1040,
+          "shots": 313,
+          "hits": 104,
+          "bestStreak": 4,
+          "cellsVisited": 129
+        },
+        {
+          "name": "EMBER",
+          "team": 0,
+          "kills": 13,
+          "deaths": 9,
+          "assists": 16,
+          "damage": 1215,
+          "shots": 322,
+          "hits": 121,
+          "bestStreak": 3,
+          "cellsVisited": 115
+        },
+        {
+          "name": "SLAG",
+          "team": 0,
+          "kills": 8,
+          "deaths": 7,
+          "assists": 14,
+          "damage": 1075,
+          "shots": 299,
+          "hits": 106,
+          "bestStreak": 4,
+          "cellsVisited": 137
+        },
+        {
+          "name": "FLUX",
+          "team": 0,
+          "kills": 10,
+          "deaths": 9,
+          "assists": 13,
+          "damage": 1085,
+          "shots": 279,
+          "hits": 108,
+          "bestStreak": 3,
+          "cellsVisited": 133
+        },
+        {
+          "name": "BRINE",
+          "team": 1,
+          "kills": 15,
+          "deaths": 10,
+          "assists": 14,
+          "damage": 1180,
+          "shots": 355,
+          "hits": 116,
+          "bestStreak": 4,
+          "cellsVisited": 134
+        },
+        {
+          "name": "EDDY",
+          "team": 1,
+          "kills": 5,
+          "deaths": 10,
+          "assists": 16,
+          "damage": 1175,
+          "shots": 357,
+          "hits": 113,
+          "bestStreak": 2,
+          "cellsVisited": 128
+        },
+        {
+          "name": "KELP",
+          "team": 1,
+          "kills": 6,
+          "deaths": 10,
+          "assists": 7,
+          "damage": 875,
+          "shots": 326,
+          "hits": 86,
+          "bestStreak": 2,
+          "cellsVisited": 138
+        },
+        {
+          "name": "RIP",
+          "team": 1,
+          "kills": 7,
+          "deaths": 10,
+          "assists": 10,
+          "damage": 915,
+          "shots": 314,
+          "hits": 90,
+          "bestStreak": 3,
+          "cellsVisited": 143
+        }
+      ],
+      "aTeam": 0
+    },
+    {
+      "seed": 47,
+      "seconds": 118.41666666666667,
+      "phase": "ended",
+      "winner": 1,
+      "score": [
+        36,
+        40
+      ],
+      "bots": [
+        {
+          "name": "ANVIL",
+          "team": 0,
+          "kills": 6,
+          "deaths": 11,
+          "assists": 12,
+          "damage": 1105,
+          "shots": 360,
+          "hits": 108,
+          "bestStreak": 1,
+          "cellsVisited": 144
+        },
+        {
+          "name": "EMBER",
+          "team": 0,
+          "kills": 13,
+          "deaths": 8,
+          "assists": 10,
+          "damage": 1160,
+          "shots": 306,
+          "hits": 115,
+          "bestStreak": 4,
+          "cellsVisited": 150
+        },
+        {
+          "name": "SLAG",
+          "team": 0,
+          "kills": 7,
+          "deaths": 9,
+          "assists": 12,
+          "damage": 940,
+          "shots": 329,
+          "hits": 92,
+          "bestStreak": 3,
+          "cellsVisited": 144
+        },
+        {
+          "name": "FLUX",
+          "team": 0,
+          "kills": 10,
+          "deaths": 12,
+          "assists": 10,
+          "damage": 1030,
+          "shots": 333,
+          "hits": 102,
+          "bestStreak": 4,
+          "cellsVisited": 118
+        },
+        {
+          "name": "BRINE",
+          "team": 1,
+          "kills": 9,
+          "deaths": 11,
+          "assists": 10,
+          "damage": 1125,
+          "shots": 300,
+          "hits": 111,
+          "bestStreak": 2,
+          "cellsVisited": 112
+        },
+        {
+          "name": "EDDY",
+          "team": 1,
+          "kills": 12,
+          "deaths": 10,
+          "assists": 15,
+          "damage": 1125,
+          "shots": 270,
+          "hits": 110,
+          "bestStreak": 3,
+          "cellsVisited": 119
+        },
+        {
+          "name": "KELP",
+          "team": 1,
+          "kills": 11,
+          "deaths": 8,
+          "assists": 14,
+          "damage": 1140,
+          "shots": 296,
+          "hits": 111,
+          "bestStreak": 2,
+          "cellsVisited": 146
+        },
+        {
+          "name": "RIP",
+          "team": 1,
+          "kills": 8,
+          "deaths": 7,
+          "assists": 14,
+          "damage": 930,
+          "shots": 305,
+          "hits": 92,
+          "bestStreak": 2,
+          "cellsVisited": 131
+        }
+      ],
+      "aTeam": 1
+    },
+    {
+      "seed": 48,
+      "seconds": 122.21666666666667,
+      "phase": "ended",
+      "winner": 0,
+      "score": [
+        40,
+        35
+      ],
+      "bots": [
+        {
+          "name": "ANVIL",
+          "team": 0,
+          "kills": 6,
+          "deaths": 9,
+          "assists": 12,
+          "damage": 925,
+          "shots": 281,
+          "hits": 87,
+          "bestStreak": 1,
+          "cellsVisited": 135
+        },
+        {
+          "name": "EMBER",
+          "team": 0,
+          "kills": 14,
+          "deaths": 7,
+          "assists": 16,
+          "damage": 1225,
+          "shots": 386,
+          "hits": 117,
+          "bestStreak": 5,
+          "cellsVisited": 137
+        },
+        {
+          "name": "SLAG",
+          "team": 0,
+          "kills": 12,
+          "deaths": 8,
+          "assists": 16,
+          "damage": 1050,
+          "shots": 280,
+          "hits": 106,
+          "bestStreak": 3,
+          "cellsVisited": 138
+        },
+        {
+          "name": "FLUX",
+          "team": 0,
+          "kills": 8,
+          "deaths": 11,
+          "assists": 13,
+          "damage": 1130,
+          "shots": 309,
+          "hits": 110,
+          "bestStreak": 2,
+          "cellsVisited": 116
+        },
+        {
+          "name": "BRINE",
+          "team": 1,
+          "kills": 11,
+          "deaths": 10,
+          "assists": 10,
+          "damage": 1010,
+          "shots": 312,
+          "hits": 99,
+          "bestStreak": 3,
+          "cellsVisited": 141
+        },
+        {
+          "name": "EDDY",
+          "team": 1,
+          "kills": 13,
+          "deaths": 9,
+          "assists": 8,
+          "damage": 1000,
+          "shots": 309,
+          "hits": 99,
+          "bestStreak": 4,
+          "cellsVisited": 135
+        },
+        {
+          "name": "KELP",
+          "team": 1,
+          "kills": 10,
+          "deaths": 10,
+          "assists": 10,
+          "damage": 1235,
+          "shots": 344,
+          "hits": 123,
+          "bestStreak": 3,
+          "cellsVisited": 136
+        },
+        {
+          "name": "RIP",
+          "team": 1,
+          "kills": 1,
+          "deaths": 11,
+          "assists": 16,
+          "damage": 1000,
+          "shots": 363,
+          "hits": 97,
+          "bestStreak": 1,
+          "cellsVisited": 134
+        }
+      ],
+      "aTeam": 0
+    },
+    {
+      "seed": 49,
+      "seconds": 113.03333333333333,
+      "phase": "ended",
+      "winner": 1,
+      "score": [
+        33,
+        40
+      ],
+      "bots": [
+        {
+          "name": "ANVIL",
+          "team": 0,
+          "kills": 8,
+          "deaths": 10,
+          "assists": 14,
+          "damage": 865,
+          "shots": 329,
+          "hits": 86,
+          "bestStreak": 3,
+          "cellsVisited": 114
+        },
+        {
+          "name": "EMBER",
+          "team": 0,
+          "kills": 10,
+          "deaths": 10,
+          "assists": 12,
+          "damage": 1110,
+          "shots": 327,
+          "hits": 110,
+          "bestStreak": 6,
+          "cellsVisited": 128
+        },
+        {
+          "name": "SLAG",
+          "team": 0,
+          "kills": 9,
+          "deaths": 10,
+          "assists": 10,
+          "damage": 1050,
+          "shots": 313,
+          "hits": 103,
+          "bestStreak": 3,
+          "cellsVisited": 120
+        },
+        {
+          "name": "FLUX",
+          "team": 0,
+          "kills": 6,
+          "deaths": 10,
+          "assists": 18,
+          "damage": 1010,
+          "shots": 310,
+          "hits": 95,
+          "bestStreak": 3,
+          "cellsVisited": 109
+        },
+        {
+          "name": "BRINE",
+          "team": 1,
+          "kills": 9,
+          "deaths": 7,
+          "assists": 15,
+          "damage": 1075,
+          "shots": 267,
+          "hits": 106,
+          "bestStreak": 3,
+          "cellsVisited": 132
+        },
+        {
+          "name": "EDDY",
+          "team": 1,
+          "kills": 8,
+          "deaths": 9,
+          "assists": 9,
+          "damage": 825,
+          "shots": 290,
+          "hits": 81,
+          "bestStreak": 2,
+          "cellsVisited": 113
+        },
+        {
+          "name": "KELP",
+          "team": 1,
+          "kills": 8,
+          "deaths": 8,
+          "assists": 14,
+          "damage": 860,
+          "shots": 256,
+          "hits": 83,
+          "bestStreak": 2,
+          "cellsVisited": 129
+        },
+        {
+          "name": "RIP",
+          "team": 1,
+          "kills": 15,
+          "deaths": 9,
+          "assists": 11,
+          "damage": 1410,
+          "shots": 294,
+          "hits": 139,
+          "bestStreak": 5,
+          "cellsVisited": 116
+        }
+      ],
+      "aTeam": 1
+    }
+  ]
+}

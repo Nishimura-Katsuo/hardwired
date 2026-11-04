@@ -1,0 +1,13 @@
+{
+  "name": "hardwired",
+  "version": "0.1.0",
+  "private": true,
+  "description": "HARDWIRED: a broadcast robot shooter league whose players were never trained.",
+  "type": "module",
+  "scripts": {
+    "start": "node tools/serve.mjs",
+    "test": "node --test \"test/*.test.mjs\"",
+    "match": "node tools/headless.mjs"
+  },
+  "engines": { "node": ">=20" }
+}

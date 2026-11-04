@@ -1,0 +1,630 @@
+/*
+  HARDWIRED broadcast graphics: Sunday-afternoon sports TV from a slightly
+  different 1980s. Solid enamel plates, slanted edges, no glass, no glow.
+*/
+:root {
+  --cobalt: #12306b;
+  --cobalt-deep: #0c2150;
+  --signal: #ffd23f;
+  --plate: #f5f3ec;
+  --kiln: #ff6a24;
+  --tide: #22d3d9;
+  --ink: #0a1a3f;
+  --type: Bahnschrift, 'DIN Alternate', 'Roboto Condensed', 'Arial Narrow', Arial, sans-serif;
+  --slant: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: var(--cobalt-deep);
+  color: var(--plate);
+  font-family: var(--type);
+  font-stretch: 75%;
+  font-variant-numeric: tabular-nums;
+}
+
+#screen {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#hud {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+#hud[hidden] {
+  display: none;
+}
+
+/* Score bug */
+.bug {
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: stretch;
+  height: 58px;
+  filter: drop-shadow(0 3px 0 rgb(10 26 63 / 0.55));
+}
+
+.bug-team {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 212px;
+  padding: 0 18px;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.bug-team strong {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.kiln {
+  justify-content: space-between;
+  background: var(--kiln);
+  clip-path: polygon(var(--slant) 0, 100% 0, 100% 100%, 0 100%);
+  padding-left: 30px;
+}
+
+.tide {
+  justify-content: space-between;
+  background: var(--tide);
+  clip-path: polygon(0 0, calc(100% - var(--slant)) 0, 100% 100%, 0 100%);
+  padding-right: 30px;
+}
+
+.bug-clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 112px;
+  background: var(--cobalt);
+  color: var(--plate);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.bug-clock small {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--signal);
+  margin-top: 3px;
+}
+
+.bug-clock small:empty {
+  display: none;
+}
+
+/* Map */
+#map {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  width: 256px;
+  height: 160px;
+  background: var(--cobalt);
+  border-bottom: 5px solid var(--signal);
+}
+
+/* Kill feed */
+#feed {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  max-width: 340px;
+}
+
+#feed li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 16px 5px 22px;
+  background: var(--cobalt);
+  font-size: 19px;
+  font-weight: 600;
+  clip-path: polygon(10px 0, 100% 0, 100% 100%, 0 100%);
+  animation: feed-in 180ms ease-out;
+}
+
+#feed .how {
+  color: var(--signal);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.t0 {
+  color: var(--kiln);
+}
+
+.t1 {
+  color: var(--tide);
+}
+
+@keyframes feed-in {
+  from {
+    transform: translateX(26px);
+    opacity: 0;
+  }
+}
+
+/* Callouts */
+#callout {
+  position: absolute;
+  top: 92px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 34px 7px;
+  background: var(--signal);
+  color: var(--ink);
+  font-size: 28px;
+  font-weight: 700;
+  white-space: nowrap;
+  clip-path: polygon(16px 0, 100% 0, calc(100% - 16px) 100%, 0 100%);
+  opacity: 0;
+  transition: opacity 180ms;
+}
+
+#callout.on {
+  opacity: 1;
+}
+
+/* Lower third */
+.third {
+  position: absolute;
+  left: 22px;
+  bottom: 28px;
+  display: grid;
+  grid-template-columns: auto 306px;
+  grid-template-rows: auto auto;
+  filter: drop-shadow(0 3px 0 rgb(10 26 63 / 0.55));
+}
+
+.third-name {
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 30px 0 18px;
+  min-width: 158px;
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--ink);
+  background: var(--plate);
+  clip-path: polygon(0 0, 100% 0, calc(100% - var(--slant)) 100%, 0 100%);
+}
+
+.third-name[data-team='0'] {
+  background: var(--kiln);
+}
+
+.third-name[data-team='1'] {
+  background: var(--tide);
+}
+
+.third-body {
+  grid-row: 1;
+  margin-left: -10px;
+  padding: 9px 18px 8px 26px;
+  background: var(--cobalt);
+}
+
+.meter {
+  height: 11px;
+  background: var(--cobalt-deep);
+}
+
+.meter div {
+  height: 100%;
+  width: 100%;
+  background: var(--signal);
+  transform-origin: left;
+}
+
+.meter div.low {
+  background: var(--kiln);
+}
+
+.third-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  white-space: nowrap;
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.third-cam {
+  grid-column: 1 / -1;
+  justify-self: start;
+  padding: 2px 16px 3px 18px;
+  background: var(--signal);
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* What the network is thinking */
+.mind {
+  position: absolute;
+  right: 22px;
+  bottom: 28px;
+  width: 268px;
+  padding: 11px 16px 10px;
+  background: var(--cobalt);
+  border-top: 5px solid var(--signal);
+}
+
+.mind h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.mind ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 3px;
+}
+
+.mind li {
+  display: grid;
+  grid-template-columns: 82px 1fr;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.mind li[hidden] {
+  display: none;
+}
+
+.mind .bar {
+  height: 10px;
+  background: var(--cobalt-deep);
+}
+
+.mind .bar i {
+  display: block;
+  height: 100%;
+  background: var(--plate);
+  transform-origin: left;
+  will-change: transform;
+}
+
+.mind li.top .bar i {
+  background: var(--signal);
+}
+
+.mind p {
+  margin: 8px 0 0;
+  font-size: 13px;
+  line-height: 1.3;
+  color: #c3cfeb;
+}
+
+#replay-bug {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4px 24px 5px;
+  background: var(--signal);
+  color: var(--ink);
+  font-size: 21px;
+  font-weight: 700;
+  clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+  display: none;
+}
+
+body.replaying #replay-bug {
+  display: block;
+}
+
+body.replaying #callout,
+body.replaying .mind {
+  visibility: hidden;
+}
+
+#lock-note {
+  position: absolute;
+  top: 194px;
+  left: 22px;
+  font-size: 16px;
+  font-weight: 500;
+  text-shadow: 0 1px 2px var(--ink);
+}
+
+/* Scoreboard */
+#table {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(760px, calc(100vw - 32px));
+  background: var(--cobalt);
+  border-top: 8px solid var(--signal);
+  padding: 20px 26px 16px;
+}
+
+#table[hidden] {
+  display: none;
+}
+
+#table h2 {
+  margin: 0 0 14px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+#table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 20px;
+}
+
+#table th {
+  padding: 0 0 4px;
+  text-align: right;
+  font-size: 15px;
+  font-weight: 500;
+  color: #c3cfeb;
+}
+
+#table th:first-child,
+#table td:first-child {
+  text-align: left;
+}
+
+#table td {
+  padding: 4px 0;
+  text-align: right;
+  font-weight: 500;
+}
+
+#table tr.team td {
+  padding-top: 12px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#table p {
+  margin: 14px 0 0;
+  font-size: 15px;
+  color: #c3cfeb;
+}
+
+/* Replay wipe: the one loud moment */
+#wipe {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.wipe-band {
+  position: absolute;
+  top: -20%;
+  left: -40%;
+  width: 180%;
+  height: 140%;
+  transform: translateX(-120%) skewX(-16deg);
+}
+
+.wipe-band.a {
+  background: var(--signal);
+}
+
+.wipe-band.b {
+  background: var(--cobalt);
+}
+
+.wipe-word {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: min(21vw, 300px);
+  line-height: 1;
+  font-weight: 700;
+  color: var(--signal);
+  opacity: 0;
+}
+
+#wipe.run {
+  visibility: visible;
+}
+
+#wipe.run .wipe-band.a {
+  animation: band 620ms cubic-bezier(0.7, 0, 0.3, 1) both;
+}
+
+#wipe.run .wipe-band.b {
+  animation: band 620ms 50ms cubic-bezier(0.7, 0, 0.3, 1) both;
+}
+
+#wipe.run .wipe-word {
+  animation: word 620ms 50ms steps(1) both;
+}
+
+@keyframes band {
+  from {
+    transform: translateX(-120%) skewX(-16deg);
+  }
+  45%,
+  55% {
+    transform: translateX(0) skewX(-16deg);
+  }
+  to {
+    transform: translateX(120%) skewX(-16deg);
+  }
+}
+
+@keyframes word {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  30%,
+  62% {
+    opacity: 1;
+  }
+}
+
+/* Title card over the live match */
+#title {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  align-content: end;
+  justify-items: start;
+  gap: 16px;
+  padding: 0 7vw 7vh;
+  background: linear-gradient(to top, rgb(10 26 63 / 0.92), rgb(10 26 63 / 0.1) 75%);
+}
+
+#title.gone {
+  display: none;
+}
+
+#title h1 {
+  margin: 0;
+  font-size: min(16vw, 200px);
+  line-height: 0.85;
+  font-weight: 700;
+  color: var(--signal);
+}
+
+#title p {
+  margin: 0;
+  max-width: 34em;
+  font-size: min(5vw, 28px);
+  line-height: 1.2;
+}
+
+#title button {
+  font: inherit;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 11px 34px 12px;
+  border: 0;
+  color: var(--ink);
+  background: var(--signal);
+  cursor: pointer;
+  clip-path: polygon(12px 0, 100% 0, calc(100% - 12px) 100%, 0 100%);
+}
+
+#title button.quiet {
+  margin-top: -6px;
+  padding: 2px 0;
+  background: none;
+  color: var(--plate);
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  clip-path: none;
+}
+
+#title button:focus-visible {
+  outline: 3px solid var(--plate);
+  outline-offset: 3px;
+  clip-path: none;
+}
+
+.keys {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 22px;
+  margin: 10px 0 0;
+  font-size: 16px;
+}
+
+.keys div {
+  display: flex;
+  gap: 7px;
+}
+
+.keys dt {
+  font-weight: 700;
+  color: var(--signal);
+}
+
+.keys dd {
+  margin: 0;
+}
+
+#fatal {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  padding: 24px;
+  background: var(--cobalt);
+  font-size: 24px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+#fatal[hidden] {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .mind,
+  #map,
+  #feed {
+    display: none;
+  }
+
+  .bug-team {
+    min-width: 120px;
+    font-size: 19px;
+  }
+
+  .third {
+    grid-template-columns: auto 180px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #wipe.run .wipe-band,
+  #wipe.run .wipe-word {
+    animation: none;
+  }
+
+  #feed li {
+    animation: none;
+  }
+}

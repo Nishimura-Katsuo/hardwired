@@ -1,0 +1,33 @@
+
+> hardwired@0.1.0 test
+> node --test "test/*.test.mjs"
+
+✔ brain API, shared policy, and live readout units (4.0792ms)
+✔ finite bounded actions across deterministic domain stress cases (29.5467ms)
+✔ reset clears activations and exactly replays recurrent trajectory (2.0209ms)
+✔ generator reproduces deployed bytes and all connections are causal (6.9596ms)
+✔ target tournament selects a visible challenger over absent incumbent (0.4493ms)
+✔ angular velocity drives lead and off-axis or reload suppresses firing (0.3062ms)
+✔ health, cover, safe reload, sound, and persona circuits respond to inputs (0.3915ms)
+✔ patrol latch advances on arrival and clears at enemy base (0.1371ms)
+✔ recorder interpolates and wraps yaw across the seam (16.2532ms)
+✔ the camera stays valid and out of the arena geometry for a whole match (2355.5074ms)
+✔ the director paces cuts, varies rigs, and cuts to replays (1447.3561ms)
+✔ the director is on the action: most kills happen to a player it is covering (1643.7777ms)
+✔ a manual lock holds the chosen player (321.7081ms)
+✔ arena has 180-degree rotational symmetry (2.0516ms)
+✔ every pickup, landmark, and enemy base is reachable from every spawn (26.6826ms)
+✔ steering waypoints walk a bot to the goal without touching a wall (9.4547ms)
+✔ raycast stops at a wall face and passes over low cover (0.3379ms)
+✔ matches are deterministic for a seed (2002.7674ms)
+✔ observations are finite, bounded, and the right size (416.0979ms)
+✔ a body shot deals body damage and uses a round (0.3136ms)
+✔ the first team to the frag limit wins and bots really fight (1395.6447ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5922.254
