@@ -118,7 +118,7 @@ The oscillator is the assigned rotation recurrence; finite precision can drift
 over an unbounded lifetime. Match resets bound its practical lifetime. The
 sin/cos turning law is a heuristic approximation to bearing control and has an
 explicit rear-direction tie break. Tracking gains, tactical priorities, health
-thresholds, spread budgets, and route preferences are hand-designed heuristics,
+thresholds, spread budgets, and route preferences are Astra-designed heuristics,
 not a proof of optimal play. The five states do not store an enemy identity or
 a spatial map; sticky slots and team contacts are existing sensor information.
 

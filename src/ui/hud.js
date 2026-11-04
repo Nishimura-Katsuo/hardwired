@@ -55,7 +55,7 @@ export class Hud {
       $('mind-bars').append(li);
       this.mindRows.push({ li, label: li.firstChild, bar: li.querySelector('i') });
     }
-    $('mind-note').textContent = `${brainInfo.parameters.toLocaleString('en-US')} hand-written weights. ${brainInfo.trainingSteps} training steps.`;
+    $('mind-note').textContent = `${brainInfo.parameters.toLocaleString('en-US')} Astra-written weights. ${brainInfo.trainingSteps} training steps.`;
   }
 
   show() {
